@@ -1,0 +1,43 @@
+{
+  "name": "MiniApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon --trace-warnings app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloudkibo/MiniApp"
+  },
+  "author": "Team CloudKibo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cloudkibo/MiniApp/issues"
+  },
+  "homepage": "https://github.com/Cloudkibo/MiniApp/blob/master/README.md",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/*",
+      "documentation/*"
+    ],
+    "delay": "1000"
+  },
+  "standard": {
+    "ignore": [
+      "client/public"
+    ],
+    "parser": "babel-eslint"
+  }
+}
